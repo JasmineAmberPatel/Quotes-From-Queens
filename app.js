@@ -1,12 +1,12 @@
 const express = require('express');
-const quotesControllers = require('./controllers/quotes');
+const QuotesControllers = require('./controllers/queenQuotes');
 const app = express();
 const cors = require('cors');
 
 app.use(cors());
 
-app.post('/QueenQuotes', quotesControllers.create);
+app.post('/queenQuotes', QuotesControllers.create);
 
-app.get('/QueenQuotes', quotesControllers.list);
+app.get('/queenQuotes', QuotesControllers.list);
 
 module.exports = app;

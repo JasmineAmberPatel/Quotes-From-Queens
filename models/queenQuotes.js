@@ -3,8 +3,9 @@ const {  Schema } = require('mongoose');
 
 const quotesSchema = new Schema({
     statement: String,
+    author: String
 });
 
-const Quotes = mongoose.model('Quotes', quotesSchema);
+const QueenQuotes = mongoose.model('QueenQuotes', quotesSchema);
 
-module.exports = Quotes;
+module.exports = QueenQuotes;
